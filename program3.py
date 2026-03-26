@@ -13,13 +13,11 @@ students = {
     "Кравченко": ["Наталія", "Юріївна", 2003]
 }
 
-# запис у JSON
 with open("students.json", "w", encoding="utf-8") as file:
     json.dump(students, file, ensure_ascii=False, indent=4)
 
 print("Файл students.json створено")
 
-# читання з JSON
 with open("students.json", "r", encoding="utf-8") as file:
     data = json.load(file)
 
